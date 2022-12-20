@@ -1,10 +1,11 @@
 from os import system
 from time import sleep
-from variables import (avatar_list, game_used, vic1, vic2, vic3, vic4, vic5,
-                       vic6, vic7, vic8)
+
 from classes import Hash, player
 from functions import (choice_colum_row, header, integer_validator,
                        victory_checker)
+from variables import (avatar_list, game_used, vic1, vic2, vic3, vic4, vic5,
+                       vic6, vic7, vic8)
 
 # --- MAIN PROGRAM ---
 header('HASH GAME!🐱‍🏍')
@@ -145,7 +146,4 @@ while True:
     victory_checker(game_used, vic8, hash_game, player1, player2)
     system('cls')
 
-    print(f"{player_now.nickname} it's your time!")
-
-    # victories possibles
-    # first number in tuple is the row, second is the column
+    print(f"{player_now.nickname} it's your time!\n")
